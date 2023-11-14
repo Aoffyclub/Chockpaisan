@@ -5,27 +5,33 @@ import Navbarr from "./components/Navbarr"
 import Contact from "./components/Contact"
 import Service from "./components/Service"
 import Pic from "./components/Pic"
+import { Flowbite } from "flowbite-react"
 
 
 
 function App() {
   return (
+
+
     <BrowserRouter>
-      <div className="w-[100%] h-[auto]">
 
-        < Navbarr />
+   
+        <div className="w-[100%] h-[auto]">
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/service" element={ <Service/> }/>
-          <Route path="/contact" element={<Contact/>} />
-          <Route path="/pic" element={<Pic/>} />
+          < Navbarr />
+
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/service" element={<Service />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/pic" element={<Pic />} />
 
 
-        </Routes>
+          </Routes>
 
-        <Footerr />
-      </div>
+          <Footerr />
+        </div>
+     
     </BrowserRouter>
   )
 }

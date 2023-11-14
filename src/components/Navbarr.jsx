@@ -28,7 +28,7 @@ const Navbarr = () => {
     return (
         <div className='sticky shadow-md w-[100%] h-16 dark:bg-gray-800 bg-slate-100 flex justify-between px-10 items-center font-bold overflow-hidden
         top-0 z-50'>
-            <div>
+            <div className='text-[20px] font-bold'>
                 โชคไพศาลไดนาโม
             </div>
             <div class='gap-4 hidden sm:flex items-center'>
